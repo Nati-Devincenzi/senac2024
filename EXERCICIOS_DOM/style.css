@@ -1,0 +1,13 @@
+button{
+    background-color: palevioletred;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 10px black;/*efeito de sombra*/
+    margin: 50px;
+}
+
+button:hover{
+    cursor: default;
+    transform: scale(1.08);
+    transition: .2s;
+}

@@ -1,0 +1,105 @@
+.logo {
+    width: 100px;
+    cursor:default;
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+.texto-topo-site{
+    width: 550px;
+    cursor:default;
+}
+ 
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+ 
+body{
+    background-color: black;
+    height: 100vh;
+}
+ 
+.interface{
+     max-width: 1280px; /*lagura máxima*/
+     margin: 0 auto; /*centralização*/
+}
+ 
+.geral{
+     display: flex;
+}
+ 
+.contato button{
+    padding: 10px /*cima e baixo*/ 40px /*esquerda e direita*/;
+    font-size: 18px; /*tamanho da letra*/
+    font-weight: 600; /*especifica o peso ou a intensidade da fonte*/
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer; /*transforma o cursor em "mãozinha"*/
+}
+
+ 
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px /*cima e baixo*/ 4% /*esquerda e direita*/;
+}
+ 
+header > .interface{
+    display: flex; /*esse elemento se torna um flex container, a partir daí podemos manipular todos os elementos filhos desse flex container*/
+    align-items: center; /*isso faz com que todos os elementos filhos dessa div sejam alinhados verticalmente ao centro.*/
+    justify-content: space-between; /*alinhar elementos horizontalmente*/
+}
+ 
+header a{
+    color: #7d7d7d;
+    text-decoration: none; /*tira o sublinhado dos links*/
+    display: inline-block;
+}
+ 
+header a:hover{ /*quando passar o cursor por cima, acontecerá...*/
+    color: white;
+    transform: scale(1.10); /*zoom no que o cursor passar por cima*/
+    transition: .2s;
+}
+ 
+header nav ul{
+    list-style-type: none; /*remover o marcador de listas não textuais.*/
+}
+ 
+header nav ul li{
+    display: inline-block;
+    padding: 0 /*cima e baixo*/ 40px /*esquerda e direita*/;
+}
+ 
+contato button:hover{ /*quando passar o cursor por cima, acontecerá...*/
+    background-color: #00FF08;
+    transform: scale(1.10); /*zoom no que o cursor passar por cima*/
+    transition: .2s;
+}
+
+ 
+/* ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px /*cima e baixo*/ 4% /*esquerda e direita*/;
+}
+ 
+section.topo-do-site .geral{
+     align-items: center; /*utilizada para controlar a posição vertical dos elementos*/
+     justify-content: center; /*utilizada para controlar a posição horizontal dos elementos*/
+     gap: 90px; /*espaçamento (entre a imagem e o texto)*/
+}
+ 
+.topo-do-site h1{
+     color: white;
+     font-size: 42px
+     line-height 40px; /*espaçamento entre linhas*/
+}
+ 
+.topo-do-site .texto-topo-site p{
+     color: white;
+     margin: 40px /*cima e baixo*/ 0 /*esquerda e direita*/
+}
